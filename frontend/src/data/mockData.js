@@ -1,0 +1,85 @@
+export const mockTracks = [
+  {
+    id: "TRK-001",
+    filename: "podcast_intro_final_v2.wav",
+    duration: "00:45",
+    uploadTime: "10 mins ago",
+    grade: "Studio Grade",
+    status: "Completed",
+    metrics: {
+      snr: "85 dB",
+      backgroundNoise: "-72 dB",
+      clippingEvents: 0,
+      lufs: "-16.2",
+    },
+    flags: [],
+  },
+  {
+    id: "TRK-002",
+    filename: "voiceover_commercial_takes.wav",
+    duration: "01:20",
+    uploadTime: "1 hour ago",
+    grade: "Pro Grade",
+    status: "Completed",
+    metrics: {
+      snr: "78 dB",
+      backgroundNoise: "-65 dB",
+      clippingEvents: 0,
+      lufs: "-14.5",
+    },
+    flags: ["Minor breath sounds detected"],
+  },
+  {
+    id: "TRK-003",
+    filename: "interview_raw_audio.mp3",
+    duration: "45:30",
+    uploadTime: "3 hours ago",
+    grade: "Standard Grade",
+    status: "Completed",
+    metrics: {
+      snr: "62 dB",
+      backgroundNoise: "-45 dB",
+      clippingEvents: 12,
+      lufs: "-12.0",
+    },
+    flags: ["High background noise", "Clipping in section 05:22"],
+  },
+  {
+    id: "TRK-004",
+    filename: "test_recording_phone.m4a",
+    duration: "00:15",
+    uploadTime: "5 hours ago",
+    grade: "Fail",
+    status: "Completed",
+    metrics: {
+      snr: "40 dB",
+      backgroundNoise: "-30 dB",
+      clippingEvents: 45,
+      lufs: "-8.5",
+    },
+    flags: ["Severe clipping", "Unacceptable noise floor", "Room echo"],
+  },
+  {
+    id: "TRK-005",
+    filename: "audiobook_chapter_1.wav",
+    duration: "22:15",
+    uploadTime: "1 day ago",
+    grade: "Studio Grade",
+    status: "Completed",
+    metrics: {
+      snr: "88 dB",
+      backgroundNoise: "-75 dB",
+      clippingEvents: 0,
+      lufs: "-19.0",
+    },
+    flags: [],
+  }
+];
+
+export const summaryStats = {
+  totalAnalyzed: 1248,
+  studioGrade: 842,
+  proGrade: 215,
+  standardGrade: 104,
+  fail: 87,
+};
